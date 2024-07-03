@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            margin: 10px 0;
+        }
+        #img img {
+            max-width: 100px;
+            margin: 10px 0;
+        }
+        #tbl {
+            margin-top: 20px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #tbl th, #tbl td {
+            border: 1px solid #d52424;
+            padding: 8px;
+        }
+        #tbl th {
+            background-color: #fd5e5e;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="txtSearchValue" placeholder="Enter country name">
+    <input type="button" value="Search" onclick="searchCountry()">
+
+    <div>
+        <h1 id="officialName"><center>Countries</center></h1>
+        <h1 id="name"></h1>
+        <div id="img"></div>
+    </div>
+
+    <table id="tbl"></table>
+
+    <script src="app.js"></script>
+</body>
+</html>
